@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-x-hidden">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Makeover Lounge Spa & salon | Premium Grooming in Bhopal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #FAF6F0;
+            color: #2D2D2D;
+        }
+
+        h1,
+        h2,
+        h3,
+        .serif-font {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('hair studio.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body class="antialiased overflow-x-hidden">
+
+    <header class="w-full bg-white/95 sticky top-0 z-50 shadow-sm transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center h-full">
+                <img src="logo2.jpg" alt="A Makeover Lounge Spa & salon"
+                    class="h-16 w-auto object-contain rounded shadow-sm">
+            </div>
+
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-stone-600">
+                <a href="#" class="text-stone-900 border-b-2 border-stone-900 pb-1">Home</a>
+                <a href="#about" class="hover:text-stone-900 transition-colors">About</a>
+                <a href="#services" class="hover:text-stone-900 transition-colors">Services</a>
+                <a href="#gallery" class="hover:text-stone-900 transition-colors">Gallery</a>
+                <a href="#reviews" class="hover:text-stone-900 transition-colors">Reviews</a>
+                <a href="#book" class="hover:text-stone-900 transition-colors">Book</a>
+                <a href="#contact" class="hover:text-stone-900 transition-colors">Contact</a>
+            </nav>
+
+            <div class="flex items-center gap-4">
+
+
+                <button id="menu-btn"
+                    class="flex md:hidden items-center justify-center w-12 h-12 text-stone-700 hover:text-stone-900 focus:outline-none transition-colors"
+                    aria-label="Toggle Menu">
+                    <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                    <svg id="menu-close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Backdrop -->
+    <div id="menu-backdrop"
+        class="fixed inset-0 z-30 bg-black/40 hidden md:hidden transition-opacity duration-300 opacity-0"></div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu"
+        class="fixed inset-y-0 right-0 z-40 w-64 bg-white shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out md:hidden flex flex-col pt-20 px-6 gap-4 border-l border-stone-100">
+        <a href="#"
+            class="text-base font-medium text-stone-800 hover:text-stone-900 border-b border-stone-100 pb-1.5 transition-colors">Home</a>
+        <a href="#about"
+            class="text-base font-medium text-stone-800 hover:text-stone-900 border-b border-stone-100 pb-1.5 transition-colors">About</a>
+        <a href="#services"
+            class="text-base font-medium text-stone-800 hover:text-stone-900 border-b border-stone-100 pb-1.5 transition-colors">Services</a>
+        <a href="#gallery"
+            class="text-base font-medium text-stone-800 hover:text-stone-900 border-b border-stone-100 pb-1.5 transition-colors">Gallery</a>
+        <a href="#reviews"
+            class="text-base font-medium text-stone-800 hover:text-stone-900 border-b border-stone-100 pb-1.5 transition-colors">Reviews</a>
+        <a href="#book"
+            class="text-base font-medium text-stone-800 hover:text-stone-900 border-b border-stone-100 pb-1.5 transition-colors">Book</a>
+        <a href="#contact"
+            class="text-base font-medium text-stone-800 hover:text-stone-900 border-b border-stone-100 pb-1.5 transition-colors">Contact</a>
+
+    </div>
+
+    <section class="hero-bg h-[85vh] flex flex-col justify-center items-center text-center px-4">
+        <h1 class="text-white text-4xl sm:text-5xl md:text-7xl font-bold max-w-4xl tracking-wide mb-4 leading-tight">
+            A Makeover Lounge <br class="md:hidden"> Spa & salon
+        </h1>
+        <p class="text-stone-200 text-sm sm:text-base md:text-xl max-w-2xl font-light mb-8 px-4 leading-relaxed">
+            A Makeover Lounge Spa & salon delivers premium grooming experiences with a playful, high-energy touch.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 w-full max-w-md sm:max-w-none mx-auto justify-center px-6">
+            <a href="#book"
+                class="bg-[#2E7D32] hover:bg-[#256329] text-white text-sm font-semibold px-8 py-3.5 rounded-full shadow-lg transition-all text-center">
+                Book Appointment
+            </a>
+            <a href="tel:+917554701727"
+                class="bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white/20 text-white text-sm font-semibold px-8 py-3.5 rounded-full transition-all text-center">
+                Call Now
+            </a>
+        </div>
+    </section>
+
+    <section id="about" class="py-12 md:py-20 max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-5 space-y-6">
+                <h2 class="text-4xl md:text-5xl font-bold leading-tight">
+                    Where Craft <br>Meets Confidence
+                </h2>
+                <p class="text-stone-600 text-base leading-relaxed">
+                    At A Makeover Lounge Spa & salon, we believe beauty begins with trust. For over a decade, we've been
+                    <strong class="text-stone-900 font-semibold">Bhopal's destination for premium hair and grooming
+                        services</strong>
+                    — a space where skilled hands meet the finest products, and every client leaves feeling transformed.
+                </p>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-8 pt-6 border-t border-stone-200">
+                    <div>
+                        <h4
+                            class="font-bold text-stone-900 mb-1 text-sm tracking-wide uppercase text-xs text-stone-400">
+                            Expertise</h4>
+                        <h3 class="font-bold text-stone-900 mb-2">Professional Stylists</h3>
+                        <p class="text-stone-500 text-sm">Our certified stylists bring years of training and artistry to
+                            every cut, color, and treatment.</p>
+                    </div>
+                    <div>
+                        <h4
+                            class="font-bold text-stone-900 mb-1 text-sm tracking-wide uppercase text-xs text-stone-400">
+                            Sanitation</h4>
+                        <h3 class="font-bold text-stone-900 mb-2">Hygiene First</h3>
+                        <p class="text-stone-500 text-sm">We follow strict sanitization protocols — every tool, every
+                            surface, every session — so you feel safe and cared for.</p>
+                    </div>
+                    <div>
+                        <h4
+                            class="font-bold text-stone-900 mb-1 text-sm tracking-wide uppercase text-xs text-stone-400">
+                            Service</h4>
+                        <h3 class="font-bold text-stone-900 mb-2">Customer Delight</h3>
+                        <p class="text-stone-500 text-sm">We listen before we create. Your vision drives every service,
+                            ensuring results that make you walk out confident.</p>
+                    </div>
+                    <div>
+                        <h4
+                            class="font-bold text-stone-900 mb-1 text-sm tracking-wide uppercase text-xs text-stone-400">
+                            Technology</h4>
+                        <h3 class="font-bold text-stone-900 mb-2">Modern Equipment</h3>
+                        <p class="text-stone-500 text-sm">We invest in the latest salon technology and premium product
+                            lines to deliver results that last.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="lg:col-span-7 rounded-3xl overflow-hidden shadow-md h-[300px] sm:h-[450px] lg:h-full min-h-[300px] lg:min-h-[500px]">
+                <img src="hair studio2.webp" alt="A Makeover Lounge Spa & salon" class="w-full h-full object-cover">
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-12 md:py-20 bg-[#F4EFE6]">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Our Services</h2>
+                <p class="text-stone-600">A complete range of hair and beauty services delivered with precision, passion
+                    and premium care.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                    <div
+                        class="h-48 w-full bg-stone-100 rounded-xl mb-5 overflow-hidden flex items-center justify-center">
+                        <i class="fa-solid fa-scissors text-5xl text-stone-400"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2">Hair Cutting</h3>
+                    <p class="text-stone-500 text-sm mb-4">Precision cuts tailored to your face shape, style and
+                        personality. From classic to contemporary.</p>
+                    <a href="#book"
+                        class="text-xs font-semibold tracking-wide text-stone-900 flex items-center gap-1 group">Learn
+                        More <i
+                            class="fa-solid fa-arrow-right text-[10px] group-hover:translate-x-1 transition-transform"></i></a>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                    <div
+                        class="h-48 w-full bg-stone-100 rounded-xl mb-5 overflow-hidden flex items-center justify-center">
+                        <i class="fa-solid fa-wand-magic-sparkles text-5xl text-stone-400"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2">Hair Styling</h3>
+                    <p class="text-stone-500 text-sm mb-4">Blow-dry, blow-out, curls, waves — we shape your hair into
+                        any style you desire.</p>
+                    <a href="#book"
+                        class="text-xs font-semibold tracking-wide text-stone-900 flex items-center gap-1 group">Learn
+                        More <i
+                            class="fa-solid fa-arrow-right text-[10px] group-hover:translate-x-1 transition-transform"></i></a>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                    <div
+                        class="h-48 w-full bg-stone-100 rounded-xl mb-5 overflow-hidden flex items-center justify-center">
+                        <i class="fa-solid fa-bottle-droplet text-5xl text-stone-400"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2">Hair Coloring</h3>
+                    <p class="text-stone-500 text-sm mb-4">Full color, highlights, balayage, ombre — using premium dyes
+                        that protect and enrich.</p>
+                    <a href="#book"
+                        class="text-xs font-semibold tracking-wide text-stone-900 flex items-center gap-1 group">Learn
+                        More <i
+                            class="fa-solid fa-arrow-right text-[10px] group-hover:translate-x-1 transition-transform"></i></a>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                    <div
+                        class="h-48 w-full bg-stone-100 rounded-xl mb-5 overflow-hidden flex items-center justify-center">
+                        <i class="fa-solid fa-spa text-5xl text-stone-400"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2">Hair Spa</h3>
+                    <p class="text-stone-500 text-sm mb-4">Deep conditioning treatments that restore shine, strength and
+                        vitality to damaged hair.</p>
+                    <a href="#book"
+                        class="text-xs font-semibold tracking-wide text-stone-900 flex items-center gap-1 group">Learn
+                        More <i
+                            class="fa-solid fa-arrow-right text-[10px] group-hover:translate-x-1 transition-transform"></i></a>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                    <div
+                        class="h-48 w-full bg-stone-100 rounded-xl mb-5 overflow-hidden flex items-center justify-center">
+                        <i class="fa-solid fa-id-card-clip text-5xl text-stone-400"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2">Beard Grooming</h3>
+                    <p class="text-stone-500 text-sm mb-4">Shape, trim, line-up and hot towel beard services for the
+                        refined gentleman.</p>
+                    <a href="#book"
+                        class="text-xs font-semibold tracking-wide text-stone-900 flex items-center gap-1 group">Learn
+                        More <i
+                            class="fa-solid fa-arrow-right text-[10px] group-hover:translate-x-1 transition-transform"></i></a>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                    <div
+                        class="h-48 w-full bg-stone-100 rounded-xl mb-5 overflow-hidden flex items-center justify-center">
+                        <i class="fa-solid fa-face-smile text-5xl text-stone-400"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2">Facial</h3>
+                    <p class="text-stone-500 text-sm mb-4">Revitalizing facials that cleanse, exfoliate and nourish your
+                        skin for a radiant glow.</p>
+                    <a href="#book"
+                        class="text-xs font-semibold tracking-wide text-stone-900 flex items-center gap-1 group">Learn
+                        More <i
+                            class="fa-solid fa-arrow-right text-[10px] group-hover:translate-x-1 transition-transform"></i></a>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                    <div
+                        class="h-48 w-full bg-stone-100 rounded-xl mb-5 overflow-hidden flex items-center justify-center">
+                        <i class="fa-solid fa-gem text-5xl text-stone-400"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2">Bridal Makeup</h3>
+                    <p class="text-stone-500 text-sm mb-4">Flawless bridal looks that celebrate your beauty and stay
+                        picture-perfect all day long.</p>
+                    <a href="#book"
+                        class="text-xs font-semibold tracking-wide text-stone-900 flex items-center gap-1 group">Learn
+                        More <i
+                            class="fa-solid fa-arrow-right text-[10px] group-hover:translate-x-1 transition-transform"></i></a>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                    <div
+                        class="h-48 w-full bg-stone-100 rounded-xl mb-5 overflow-hidden flex items-center justify-center">
+                        <i class="fa-solid fa-palette text-5xl text-stone-400"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2">Party Makeup</h3>
+                    <p class="text-stone-500 text-sm mb-4">Glamorous make-up for every occasion — from cocktail evenings
+                        to grand celebrations.</p>
+                    <a href="#book"
+                        class="text-xs font-semibold tracking-wide text-stone-900 flex items-center gap-1 group">Learn
+                        More <i
+                            class="fa-solid fa-arrow-right text-[10px] group-hover:translate-x-1 transition-transform"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white border-b border-stone-100">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div>
+                <span class="text-xs uppercase tracking-widest text-stone-400 font-bold">Quality</span>
+                <h3 class="text-xl font-bold mt-1 mb-2">Premium Products</h3>
+                <p class="text-stone-500 text-sm">We use only internationally acclaimed brands — nourishing your hair
+                    and skin with the best ingredients.</p>
+            </div>
+            <div>
+                <span class="text-xs uppercase tracking-widest text-stone-400 font-bold">Service</span>
+                <h3 class="text-xl font-bold mt-1 mb-2">Customer Delight</h3>
+                <p class="text-stone-500 text-sm">We don't just style; we consult. Your comfort, satisfaction, and
+                    confidence are our core metrics of success.</p>
+            </div>
+            <div>
+                <span class="text-xs uppercase tracking-widest text-stone-400 font-bold">Results</span>
+                <h3 class="text-xl font-bold mt-1 mb-2">Customer Satisfaction</h3>
+                <p class="text-stone-500 text-sm">A 4.4/5 rating isn't luck — it's the result of 1,300 happy
+                    clients who keep coming back.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="py-12 md:py-20 max-w-7xl mx-auto px-6">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">Our Work</h2>
+            <p class="text-stone-600">A glimpse into the transformations that happen every day at A Makeover Lounge Spa
+                & salon.</p>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="rounded-xl overflow-hidden shadow-sm h-48 md:h-72"><img
+                    src="gallery_1.jpg"
+                    alt="Hair Styling Area"
+                    class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"></div>
+            <div class="rounded-xl overflow-hidden shadow-sm h-48 md:h-72"><img
+                    src="gallery_2.jpg"
+                    alt="Styling Station"
+                    class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"></div>
+            <div class="rounded-xl overflow-hidden shadow-sm h-48 md:h-72"><img
+                    src="gallery_3.jpg"
+                    alt="Professional Hair Styling"
+                    class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"></div>
+            <div class="rounded-xl overflow-hidden shadow-sm h-48 md:h-72 relative group">
+                <img src="gallery_4.jpg"
+                    alt="Spa & Massage Room"
+                    class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                <div class="absolute bottom-4 left-4 bg-black/70 backdrop-blur-sm text-white px-3 py-1 rounded text-xs">
+                    04 Massage Room</div>
+            </div>
+            <div class="rounded-xl overflow-hidden shadow-sm h-48 md:h-72"><img
+                    src="gallery_5.jpg"
+                    alt="Twin Massage Beds"
+                    class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"></div>
+            <div class="rounded-xl overflow-hidden shadow-sm h-48 md:h-72"><img
+                    src="gallery_6.jpg"
+                    alt="Spa Treatment Setup"
+                    class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"></div>
+            <div class="rounded-xl overflow-hidden shadow-sm h-48 md:h-72"><img
+                    src="gallery_7.jpg"
+                    alt="Massage Bed Detail"
+                    class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"></div>
+            <div class="rounded-xl overflow-hidden shadow-sm h-48 md:h-72 relative group">
+                <img src="gallery_8.jpg"
+                    alt="Spa Ambience & Atmosphere"
+                    class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                <div class="absolute bottom-4 left-4 bg-black/70 backdrop-blur-sm text-white px-3 py-1 rounded text-xs">
+                    08 Spa Atmosphere</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="py-12 md:py-20 bg-[#F4EFE6]">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs uppercase tracking-widest text-[#2E7D32] font-bold">Testimonials</span>
+                <h2 class="text-4xl md:text-5xl font-bold mt-2 mb-4">What Our Clients Say</h2>
+                <p class="text-stone-600">Rated 4.4/5 by 1,300 customers.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-stone-700 italic text-sm leading-relaxed">"Absolutely stunning work! My bridal
+                            look was everything I dreamed of and more. The team was professional, patient and made me
+                            feel like a queen on my special day."</p>
+                    </div>
+                    <div class="flex items-center gap-3 mt-6 pt-6 border-t border-stone-100">
+                        <div
+                            class="w-10 h-10 rounded-full bg-stone-100 flex items-center justify-center font-bold text-stone-700 text-sm">
+                            PS</div>
+                        <div>
+                            <h4 class="font-bold text-sm text-stone-900">Priya Sharma</h4>
+                            <span class="text-xs text-stone-400">Bridal Makeup</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-stone-700 italic text-sm leading-relaxed">"Best haircut I've ever had in Bhopal.
+                            The stylist understood exactly what I wanted and delivered beyond expectations. Will
+                            definitely come back!"</p>
+                    </div>
+                    <div class="flex items-center gap-3 mt-6 pt-6 border-t border-stone-100">
+                        <div
+                            class="w-10 h-10 rounded-full bg-stone-100 flex items-center justify-center font-bold text-stone-700 text-sm">
+                            RV</div>
+                        <div>
+                            <h4 class="font-bold text-sm text-stone-900">Rahul Verma</h4>
+                            <span class="text-xs text-stone-400">Hair Cutting & Styling</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-stone-700 italic text-sm leading-relaxed">"My hair was so frizzy and damaged.
+                            After the keratin treatment here, it's silky smooth and manageable. The results lasted
+                            months — completely worth it."</p>
+                    </div>
+                    <div class="flex items-center gap-3 mt-6 pt-6 border-t border-stone-100">
+                        <div
+                            class="w-10 h-10 rounded-full bg-stone-100 flex items-center justify-center font-bold text-stone-700 text-sm">
+                            AP</div>
+                        <div>
+                            <h4 class="font-bold text-sm text-stone-900">Anita Patel</h4>
+                            <span class="text-xs text-stone-400">Keratin Treatment</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="book" class="py-12 md:py-20 max-w-4xl mx-auto px-6">
+        <div class="text-center mb-12">
+            <h2 class="text-4xl md:text-5xl font-bold mb-3">Book an Appointment</h2>
+            <p class="text-stone-600">Fill in the form below and our team will confirm your appointment within 24 hours.
+            </p>
+        </div>
+
+        <form class="space-y-6 bg-white p-5 sm:p-8 md:p-10 rounded-3xl shadow-sm border border-stone-100">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <label class="block text-xs font-bold text-stone-700 uppercase tracking-wide mb-2">First Name
+                        *</label>
+                    <input type="text" placeholder="Enter your first name" required
+                        class="w-full bg-stone-50 border border-stone-200 rounded-xl px-4 py-3.5 text-sm focus:outline-none focus:border-stone-400 transition-colors">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-stone-700 uppercase tracking-wide mb-2">Last Name
+                        *</label>
+                    <input type="text" placeholder="Enter your last name" required
+                        class="w-full bg-stone-50 border border-stone-200 rounded-xl px-4 py-3.5 text-sm focus:outline-none focus:border-stone-400 transition-colors">
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <label class="block text-xs font-bold text-stone-700 uppercase tracking-wide mb-2">Email Address
+                        *</label>
+                    <input type="email" placeholder="your@email.com" required
+                        class="w-full bg-stone-50 border border-stone-200 rounded-xl px-4 py-3.5 text-sm focus:outline-none focus:border-stone-400 transition-colors">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-stone-700 uppercase tracking-wide mb-2">Phone Number
+                        *</label>
+                    <input type="tel" placeholder="+91 98765 43210" required
+                        class="w-full bg-stone-50 border border-stone-200 rounded-xl px-4 py-3.5 text-sm focus:outline-none focus:border-stone-400 transition-colors">
+                </div>
+            </div>
+
+            <div>
+                <label class="block text-xs font-bold text-stone-700 uppercase tracking-wide mb-2">Service Selection
+                    *</label>
+                <select required
+                    class="w-full bg-stone-50 border border-stone-200 rounded-xl px-4 py-3.5 text-sm focus:outline-none focus:border-stone-400 transition-colors text-stone-500">
+                    <option value="" disabled selected>Select a service</option>
+                    <option value="cutting">Hair Cutting</option>
+                    <option value="styling">Hair Styling</option>
+                    <option value="coloring">Hair Coloring</option>
+                    <option value="spa">Hair Spa</option>
+                    <option value="grooming">Beard Grooming</option>
+                    <option value="facial">Facial</option>
+                    <option value="bridal">Bridal Makeup</option>
+                    <option value="party">Party Makeup</option>
+                </select>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <label class="block text-xs font-bold text-stone-700 uppercase tracking-wide mb-2">Preferred Date
+                        *</label>
+                    <input type="date" required
+                        class="w-full bg-stone-50 border border-stone-200 rounded-xl px-4 py-3.5 text-sm focus:outline-none focus:border-stone-400 transition-colors text-stone-500">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-stone-700 uppercase tracking-wide mb-2">Preferred Time
+                        *</label>
+                    <input type="time" required
+                        class="w-full bg-stone-50 border border-stone-200 rounded-xl px-4 py-3.5 text-sm focus:outline-none focus:border-stone-400 transition-colors text-stone-500">
+                </div>
+            </div>
+
+            <div>
+                <div class="flex justify-between max-w-full mb-2">
+                    <label class="block text-xs font-bold text-stone-700 uppercase tracking-wide">Additional
+                        Notes</label>
+                    <span class="text-xs text-stone-400">0/500 characters</span>
+                </div>
+                <textarea rows="4" placeholder="Any special requests or notes..."
+                    class="w-full bg-stone-50 border border-stone-200 rounded-xl px-4 py-3.5 text-sm focus:outline-none focus:border-stone-400 transition-colors resize-none"></textarea>
+            </div>
+
+            <button type="submit"
+                class="w-full bg-[#2E7D32] hover:bg-[#256329] text-white font-semibold py-4 rounded-xl shadow-md transition-colors text-sm">
+                Request Appointment
+            </button>
+        </form>
+    </section>
+
+    <section id="contact" class="py-12 md:py-20 bg-white border-t border-stone-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Get in Touch</h2>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+                <div
+                    class="lg:col-span-7 rounded-2xl overflow-hidden border border-stone-200 h-[250px] sm:h-[400px] shadow-sm relative">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3665.7693279279247!2d77.45552927368914!3d23.251479679013915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c4206007cbc95%3A0xf51ede17c2bf8cc8!2sA%20Makeover%20Lounge%20Spa%20%26%20salon!5e0!3m2!1sen!2sin!4v1781170708421!5m2!1sen!2sin"
+                        class="w-full h-full border-0" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <h4 class="text-xs font-bold tracking-widest uppercase text-stone-400 mb-2">Phone</h4>
+                        <a href="tel:+917554701727"
+                            class="text-2xl font-bold text-stone-900 hover:text-stone-700 transition-colors">+91
+                            7554701727</a>
+                    </div>
+
+                    <div>
+                        <h4 class="text-xs font-bold tracking-widest uppercase text-stone-400 mb-2">Address</h4>
+                        <p class="text-stone-700 text-base leading-relaxed font-medium">
+                            Plot-27, Raisen Rd, beside Domino's Pizza,<br>
+                            Indrapuri A sector, Sector A, Indrapuri,<br>
+                            Bhopal, Madhya Pradesh 462021
+                        </p>
+                    </div>
+
+                    <div>
+                        <h4 class="text-xs font-bold tracking-widest uppercase text-stone-400 mb-2">Business Hours</h4>
+                        <p class="text-stone-700 font-medium">Monday – Sunday: 9:00 AM – 10:00 PM</p>
+                    </div>
+
+                    <div class="pt-2">
+                        <a href="https://wa.me/917554701727" target="_blank"
+                            class="inline-flex items-center gap-2.5 bg-[#128C7E] hover:bg-[#075E54] text-white px-6 py-3 rounded-xl font-semibold text-sm shadow-sm transition-colors">
+                            <i class="fa-brands fa-whatsapp text-lg"></i> Chat on WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#0A2E16] text-white/80 py-16">
+        <div
+            class="max-w-7xl mx-auto px-6 grid grid-cols-2 sm:grid-cols-12 gap-10 border-b border-white/10 pb-12 mb-12">
+            <div class="col-span-2 sm:col-span-6 md:col-span-4 space-y-4">
+                <div class="flex items-center gap-3">
+                    <img src="logo2.jpg" alt="A Makeover Lounge Spa & salon" class="h-10 w-auto object-contain rounded">
+                    <span class="serif-font font-bold text-xl tracking-tight text-white">A Makeover Lounge Spa &
+                        salon</span>
+                </div>
+                <p class="text-sm text-white/60 font-light leading-relaxed">
+                    Premium hair and beauty services in the heart of Bhopal. Where craft meets confidence.
+                </p>
+                <div class="pt-2">
+                    <form class="flex flex-col sm:flex-row gap-2 max-w-sm">
+                        <input type="email" placeholder="Subscribe to our email" required
+                            class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-2.5 text-xs focus:outline-none focus:border-white text-white placeholder-white/40">
+                        <button type="submit"
+                            class="bg-white hover:bg-stone-100 text-[#0A2E16] text-xs font-bold px-4 py-2.5 rounded-lg transition-colors whitespace-nowrap w-full sm:w-auto text-center">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-span-1 sm:col-span-3 md:col-span-2 space-y-3">
+                <h4 class="text-xs uppercase tracking-widest text-white font-bold mb-1">Quick Links</h4>
+                <ul class="space-y-2 text-xs font-medium">
+                    <li><a href="#" class="hover:text-white transition-colors">Home</a></li>
+                    <li><a href="#about" class="hover:text-white transition-colors">About</a></li>
+                    <li><a href="#services" class="hover:text-white transition-colors">Services</a></li>
+                    <li><a href="#gallery" class="hover:text-white transition-colors">Reviews</a></li>
+                    <li><a href="#book" class="hover:text-white transition-colors">Book Now</a></li>
+                </ul>
+            </div>
+
+            <div class="col-span-1 sm:col-span-3 md:col-span-2 space-y-3">
+                <h4 class="text-xs uppercase tracking-widest text-white font-bold mb-1">Services</h4>
+                <ul class="space-y-2 text-xs font-medium">
+                    <li><a href="#services" class="hover:text-white transition-colors">Hair Cutting</a></li>
+                    <li><a href="#services" class="hover:text-white transition-colors">Hair Styling</a></li>
+                    <li><a href="#services" class="hover:text-white transition-colors">Hair Coloring</a></li>
+                    <li><a href="#services" class="hover:text-white transition-colors">Hair Spa</a></li>
+                    <li><a href="#services" class="hover:text-white transition-colors">Beard Grooming</a></li>
+                    <li><a href="#services" class="hover:text-white transition-colors">Facial</a></li>
+                </ul>
+            </div>
+
+            <div class="col-span-2 sm:col-span-6 md:col-span-4 space-y-4">
+                <h4 class="text-xs uppercase tracking-widest text-white font-bold mb-1">Get In Touch</h4>
+                <p class="text-xs font-medium text-white/90 leading-relaxed">
+                    <i class="fa-solid fa-phone mr-2 text-white/60"></i> +91 7554701727<br class="mb-2">
+                    <i class="fa-solid fa-location-dot mr-2 text-white/60"></i> Plot-27, Raisen Rd, beside Domino's
+                    Pizza, Indrapuri A sector, Sector A, Indrapuri, Bhopal, Madhya Pradesh 462021<br class="mb-2">
+                    <i class="fa-solid fa-clock mr-2 text-white/60"></i> Mon – Sun: 9:00 AM – 10:00 PM
+                </p>
+                <div class="flex gap-4 text-white/60 pt-2 text-sm">
+                    <a href="#" class="hover:text-white transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-white transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="hover:text-white transition-colors"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" class="hover:text-white transition-colors"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" class="hover:text-white transition-colors"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div
+            class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center text-xs text-white/40 font-medium gap-4">
+            <div>© 2026 A Makeover Lounge Spa & salon. All rights reserved.</div>
+            <div class="flex gap-6">
+                <a href="#" class="hover:text-white/60 transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-white/60 transition-colors">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuBackdrop = document.getElementById('menu-backdrop');
+        const menuIcon = document.getElementById('menu-icon');
+        const menuCloseIcon = document.getElementById('menu-close-icon');
+
+        function toggleMenu() {
+            const isOpen = !mobileMenu.classList.contains('translate-x-full');
+            if (isOpen) {
+                // Close menu
+                mobileMenu.classList.add('translate-x-full');
+                menuBackdrop.classList.add('opacity-0');
+                setTimeout(() => menuBackdrop.classList.add('hidden'), 300);
+                menuIcon.classList.remove('hidden');
+                menuCloseIcon.classList.add('hidden');
+                document.body.classList.remove('overflow-hidden');
+            } else {
+                // Open menu
+                mobileMenu.classList.remove('translate-x-full');
+                menuBackdrop.classList.remove('hidden');
+                setTimeout(() => menuBackdrop.classList.remove('opacity-0'), 10);
+                menuIcon.classList.add('hidden');
+                menuCloseIcon.classList.remove('hidden');
+                document.body.classList.add('overflow-hidden');
+            }
+        }
+
+        menuBtn.addEventListener('click', toggleMenu);
+        menuBackdrop.addEventListener('click', toggleMenu);
+
+        // Close menu when clicking on a link
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (!mobileMenu.classList.contains('translate-x-full')) {
+                    toggleMenu();
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
